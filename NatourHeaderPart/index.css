@@ -18,8 +18,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 95vh;
-  /* background-color: blue; */
-  /* background-color: purple; */
+
   background-color: aqua;
   position: relative;
   /* clip-path: polygon(0 0, 100% 0, 100% 75px 0 100%); */
@@ -41,6 +40,7 @@ body {
   font-size: 24px;
   /* font-weight:700; */
   color: #fff;
+
   animation: MoveInRightFromLeft 2s ease-in;
 
 }
@@ -51,6 +51,7 @@ body {
   font-weight: 200;
   margin-bottom: 8px;
   color: #fff;
+
   animation: MoveInLeftFromRight 2s ease-in;
 }
 
@@ -96,6 +97,17 @@ body {
 
 }
 
+/* .logo-image{
+
+  animation: MoveInLeftFromRight 1s;
+
+} */
+
+.logo-image:hover{
+
+  animation: MoveInLeftFromRight  3s;
+
+}
 
 @keyframes MoveInRightFromLeft {
 
