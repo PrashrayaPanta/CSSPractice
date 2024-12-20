@@ -1,0 +1,101 @@
+/* *{
+
+    box-sizing: border-box;
+} */
+
+body {
+  margin: 0px;
+}
+
+#main {
+  /* background-color: red; */
+  /* border: 1px solid blue; */
+  /* padding: 20px; */
+  /* padding: 12px; */
+  /* background-color: red; */
+  background-color: rgb(238, 238, 238);
+  margin: 22px 10px;
+  /* padding: 8px; */
+  border-radius: 5px;
+  /* padding:10px; */
+}
+
+#img-div {
+  background-color: white;
+  padding: 10px;
+  /* padding: 50px; */
+
+  /* display:flex;
+    flex-direction: column; */
+
+  /* margin: 0 auto; */
+  /* padding-left:90px;
+    padding-right:90px;
+    padding-top: 30px;
+    padding-bottom: 30px; */
+  /* background-color: red; */
+  /* max-width: 1500px; */
+}
+
+#character,
+#title,
+h3 {
+  text-align: center;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#img-caption {
+  text-align: center;
+  margin: 15px 5px;
+}
+
+#tribute-info {
+  text-align: center;
+}
+
+#tribute-links {
+  /* background-color: blue; */
+  max-width: 400px;
+  margin: 0 auto;
+  /* padding-left: 0px; */
+
+  /* margin: 0 auto; */
+}
+
+/* li {
+  line-height: 1rem;
+} */
+
+#tribute-links li {
+  padding-bottom: 8px;
+  line-height: 1.5rem;
+}
+
+blockquote {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* cite {
+  font-style: italic;
+} */
+
+p {
+  line-height: 1.5rem;
+  font-style: italic;
+}
+
+h3 {
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin-inline: auto; */
+  /* background-color: red; */
+  padding-bottom: 5px;
+  line-height: 1.5rem;
+}
