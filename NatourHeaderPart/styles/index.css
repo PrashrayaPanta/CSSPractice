@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* THe default font-size is 16px of root element */
+body {
+  /* padding:12px; */
+  /* background-color: red; */
+  background-color: blue;
+  padding: 0.75rem;
+}
+
+.header {
+  background-image: url("../premium_photo-1726743697632-5790d2ebf36b.avif");
+  /* background-size: cover; */
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  background-color: aqua;
+  position: relative;
+  /* clip-path: polygon(0 0, 100% 0, 100% 75px 0 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
+.header-text-anchorbtn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.outdoor-text {
+  letter-spacing: 0.75rem;
+  font-size: 1.5rem;
+  /* font-weight:700; */
+  color: #fff;
+  animation: MoveInRightFromLeft 2s ease-in;
+}
+
+.life-happen-text {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  animation: MoveInLeftFromRight 2s ease-in;
+}
+
+.btn {
+  padding: 0.625rem 1.25rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 6.25rem;
+}
+
+.btn--animate {
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  color: inherit;
+  background-color: #fff;
+}
+
+.header_logo-box {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+}
+
+.header_logo-image {
+  height: 3.75rem;
+}
+
+/* .logo-image{
+
+  animation: MoveInLeftFromRight 1s;
+
+} */
+.header_logo-image:hover {
+  animation: MoveInLeftFromRight 3s;
+}
+
+@keyframes MoveInRightFromLeft {
+  0% {
+    transform: translateX(-6.25rem);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes MoveInLeftFromRight {
+  0% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+
+/*# sourceMappingURL=index.css.map */

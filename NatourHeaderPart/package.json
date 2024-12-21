@@ -1,0 +1,14 @@
+{
+  "name": "natourheaderpart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-dev": "sass ./sass/index.scss ./styles/index.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.83.0"
+  }
+}
