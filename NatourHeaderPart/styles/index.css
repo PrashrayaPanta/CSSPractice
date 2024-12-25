@@ -23,7 +23,11 @@ body {
   /* clip-path: polygon(0 0, 100% 0, 100% 75px 0 100%); */
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 }
-
+.header_logo-box {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+}
 .header-text-anchorbtn {
   position: absolute;
   top: 40%;
@@ -31,16 +35,20 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-.outdoor-text {
+.header__logo-image {
+  height: 3.75rem;
+}
+.header__logo-image:hover {
+  animation: MoveInLeftFromRight 3s;
+}
+.header-outdoor-text {
   letter-spacing: 0.75rem;
   font-size: 1.5rem;
   /* font-weight:700; */
   color: #fff;
   animation: MoveInRightFromLeft 2s ease-in;
 }
-
-.life-happen-text {
+.header-happen-text {
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 200;
@@ -55,34 +63,23 @@ body {
   text-decoration: none;
   border-radius: 6.25rem;
 }
-
-.btn--animate {
-  transition: all 0.5s;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
 .btn--white {
   color: inherit;
   background-color: #fff;
 }
-
-.header_logo-box {
-  position: absolute;
-  top: 1.25rem;
-  left: 1.25rem;
+.btn--animate {
+  transition: all 0.5s;
 }
-
-.header_logo-image {
-  height: 3.75rem;
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn:active .header_logo-image:hover {
+  animation: MoveInLeftFromRight 3s;
 }
 
 /* .logo-image{
@@ -90,10 +87,6 @@ body {
   animation: MoveInLeftFromRight 1s;
 
 } */
-.header_logo-image:hover {
-  animation: MoveInLeftFromRight 3s;
-}
-
 @keyframes MoveInRightFromLeft {
   0% {
     transform: translateX(-6.25rem);
