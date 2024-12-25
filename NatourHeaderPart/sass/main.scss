@@ -1,0 +1,38 @@
+
+@use "Abstract/variable";
+
+
+@use  "Abstract/mixins";
+@use "Abstract/functions";
+
+
+
+//Dont use @use url(path) use this in normal css
+@use "./Base/animate.scss";
+@use "./Base/base.scss";
+@use "./Base/typography.scss";
+@use "./Base/utilities.scss";
+
+
+
+@use "./Pages/Home.scss";
+
+
+@use "./Components/button.scss";
+
+
+@use "./Layout/Header.scss"
+  
+
+
+  
+  
+ 
+  
+
+  
+  
+  
+  
+  /*# sourceMappingURL=index.css.map */
+  

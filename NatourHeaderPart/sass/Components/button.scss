@@ -1,0 +1,36 @@
+  
+  .btn {
+    padding: 0.625rem 1.25rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 6.25rem;
+    &--white {
+      color: inherit;
+      background-color: #fff;
+    }
+    &--animate{
+      transition: all 0.5s;
+    }
+
+      
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+
+    
+  &:active {
+    transform: translateY(-1px); .header_logo-image:hover{
+  
+      animation: MoveInLeftFromRight  3s;
+    
+    }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+    
+
+  }
