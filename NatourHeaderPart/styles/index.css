@@ -147,6 +147,22 @@ body {
   color: black;
 }
 
+.row {
+  max-width: 71.25rem;
+  background-color: #eee;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+  background-color: orangered;
+}
+.row .col-1-of-2:not(:last-child) {
+  margin-right: 6rem;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
