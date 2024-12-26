@@ -21,7 +21,29 @@
 @use "./Components/button.scss";
 
 
-@use "./Layout/Header.scss"
+@use "./Layout/Header.scss";
+
+
+@use "./Components/card.scss";
+
+
+
+.card-container{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4px;
+  row-gap:4px;
+
+}
+
+
+
+
+
+
+
+
   
 
 
