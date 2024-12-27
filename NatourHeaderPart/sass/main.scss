@@ -1,33 +1,33 @@
 
-@use "Abstract/variable";
+@use "Abstract/_variables";
 
 
-@use  "Abstract/mixins";
-@use "Abstract/functions";
+@use  "Abstract/_mixins";
+@use "Abstract/_functions";
 
 
 
 //Dont use @use url(path) use this in normal css
-@use "./Base/animate.scss";
-@use "./Base/base.scss";
-@use "./Base/typography.scss";
-@use "./Base/utilities.scss";
+@use "./Base/_animate.scss";
+@use "./Base/_base.scss";
+@use "./Base/_typography.scss";
+@use "./Base/_utilities.scss";
 
 
 
-@use "./Pages/Home.scss";
+@use "./Pages/_home.scss";
 
 
-@use "./Components/button.scss";
+@use "./Components/_button.scss";
 
 
-@use "./Layout/Header.scss";
+@use "./Layout/_header.scss";
 
 
-@use "./Components/card.scss";
+@use "./Components/_card.scss";
 
 
-@use "./Layout/grid.scss";
+@use "./Layout/_grid.scss";
 
 
 
@@ -37,6 +37,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 4px;
   row-gap:4px;
+
 
 }
 
