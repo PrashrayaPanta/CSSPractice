@@ -6,13 +6,13 @@
     margin:0 auto;
 
 
-    //erebything expect last child 
+
     &:not(:last-child){
         margin-bottom:variables.$gutter-vertical;  
     }
 
 
-    // @include clearfix;
+
 
 
     .col-1-of-2{
