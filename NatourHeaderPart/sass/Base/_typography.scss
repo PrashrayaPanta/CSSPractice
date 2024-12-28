@@ -2,6 +2,7 @@
 @use "../Abstract/variables";
 
 
+@use "../Base/utilities";
 
 
 .heading-secondary{
@@ -26,3 +27,29 @@
     }
 
 }
+
+
+
+
+.heading-tertiary{
+
+    font-size: variables.$default-font-size;
+    font-weight:700;
+    text-transform: uppercase;
+
+}
+
+
+.paragraph{
+    
+    font-size: variables.$default-font-size;
+ 
+
+    margin-bottom: 1.2rem;
+
+
+
+}
+
+
+

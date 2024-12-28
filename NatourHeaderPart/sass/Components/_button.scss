@@ -1,5 +1,5 @@
 
-// @use "../Abstract/variables.scss";
+@use "../Abstract/variables.scss";
 
 
   .btn {
@@ -34,6 +34,44 @@
   
 
 
-    
+  }
+
+
+  .btn-text{
+      &:link,
+      &:visited{
+
+           font-size: variables.$default-font-size;
+          color: variables.$color-primary-dark;
+          display: inline-block;
+          text-decoration: none;
+          border-bottom: 1px solid variables.$color-primary-dark;
+          padding: 3px;
+          transition: all 0.2s;
+
+
+      }
+
+      &:hover{
+
+        background-color: variables.$color-primary-dark;
+
+        color: variables.$color-full-white-text;
+
+        box-shadow: 0 1rem 2rem rgba(variables.$color-black, 0.15);
+
+        transform: translateY(-2px);
+
+      }
+
+
+      &:active{
+
+        box-shadow: 0 0.5rem 1rem rgba(variables.$color-black, 0.15);
+        transform: translateY(0);
+
+      }
+
+
 
   }
