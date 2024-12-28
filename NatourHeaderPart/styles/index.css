@@ -26,6 +26,36 @@ body {
   padding: 0.75rem;
 }
 
+.heading-secondary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transform: all 0.2s;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 10rem 0;
+  margin-top: -10vh;
+}
+
 .btn {
   padding: 0.625rem 1.25rem;
   display: inline-block;
@@ -155,13 +185,35 @@ body {
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
-.row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
   background-color: orangered;
   float: left;
 }
-.row .col-1-of-2:not(:last-child) {
+.row [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(2 * (100% - 2 * 6rem) / 3 + 6rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc(2 * (100% - 3 * 6rem) / 4 + 6rem);
+}
+.row .col-3-of-4 {
+  width: calc(3 * (100% - 3 * 6rem) / 4 + 12rem);
 }
 
 .card-container {
