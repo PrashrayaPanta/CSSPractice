@@ -7,7 +7,7 @@
 
 .heading-secondary{
 
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 700;
     background-image: linear-gradient(to right, variables.$color-primary-light, variables.$color-primary-dark);
@@ -36,15 +36,14 @@
     font-size: variables.$default-font-size;
     font-weight:700;
     text-transform: uppercase;
+    font-size: 1.6rem;
 
 }
 
 
 .paragraph{
     
-    font-size: variables.$default-font-size;
- 
-
+    font-size: 2rem;
     margin-bottom: 1.2rem;
 
 
