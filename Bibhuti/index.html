@@ -1,140 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bibhuti Skills</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <style>
-        li ul {
+      .header {
+        display: flex;
+        padding: 30px;
+        gap: 50px;
+        background-color: pink;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        flex-grow: 1;
+      }
+      li ul {
+        display: none;
+      }
 
+      li:hover ul {
+        display: block;
+      }
 
-            /* display: none; */
+      .navigation__home__item {
+        display: flex;
+        align-items: center;
+      }
 
-            /* pointer-events: none; */
+      .navigation__home__item a {
+        color: inherit;
+        text-decoration: none;
+        padding: 10px;
+      }
 
+      .navigation__about__item {
+        display: flex;
+        align-items: center;
+        background-color: beige;
+        position: relative;
+      }
+
+      .navigation__about__item a {
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .navigation__about__item__menu {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        list-style-type: none;
+        background-color: pink;
+        padding: 12px 5px;
+        width: max-content;
+      }
+
+      .navigation__about__item__menu a {
+        color: inherit;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .navigation__level__item {
+        display: flex;
+        align-items: center;
+        background-color: aqua;
+        position: relative;
+      }
+
+      .navigation__level__item a {
+        color: inherit;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .navigation__level__item__menu {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        list-style-type: none;
+        background-color: red;
+        padding: 12px 5px;
+      }
+
+      .navigation__level__item__menu a {
+        color: inherit;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .navigation__facilities__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: red;
+      }
+
+      .navigation__facilities__item a {
+        color: inherit;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .navigation__facilities__item__menu {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        list-style-type: none;
+        background-color: purple;
+        width: max-content;
+        padding: 12px 5px;
+      }
+
+      .navigation__facilities__item__menu a {
+        color: inherit;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .navigation__about__item {
+          display: none;
         }
 
-        li:hover ul {
-
-            /* display: block; */
-
-            /* opacity: 1; */
-
-
-
+        .navigation__facilities__item {
+          display: none;
         }
+
+        .navigation__level__item {
+          display: none;
+        }
+      }
     </style>
+  </head>
 
-
-
-</head>
-
-<body style="background-color: pink;">
-
-    <div style="background-color: red;">
-
-        <div style="max-width: 1200px;margin-left: auto;display: flex;margin-right: auto;">
-
-            <header style="display: flex;padding: 30px;gap: 50px;">
-
-                <div>
-                    <img src="https://bibskills.com/storage/accessskills/files/1/bib_skills_logo.png" alt="" srcset="">
-                </div>
-
-
-
-                <div
-                    style="display: flex;background-color: azure;align-items: center;font-size: 2rem;flex-grow: 1;justify-content: space-between;gap: 22px;">
-                    <ul class="navigation__list"
-                        style="display: flex;list-style-type: none;gap: 40px;position: relative;">
-                        <li class="navigation__item" style="display: flex;align-items: center;">
-                            <a href="" style="color:black;text-decoration: none;">Home</a>
-                        </li>
-                        <li class="test" style="display: flex;align-items: center;gap:5px;;background-color: pink;">
-                            <a href="" style="color:black;text-decoration: none;">About</a>
-                            <i class="fa-duotone fa-solid fa-plus"></i>
-                            <ul
-                                style="position: absolute;top:200%;left:5%;list-style-type: none;background-color: pink;padding-top: 12px;padding-bottom: 12px;padding-left: 5px;padding-right: 5px;visibility: hidden;">
-                                <li><a href="" style="text-decoration: none;color:inherit">iosafgjn</a></li>
-                                <li><a href="" style="text-decoration: none;color:inherit">diosfjgokn klsgefdn</a></li>
-                                <li><a href="" style="text-decoration: none;color:inherit">isdfhgjodfn</a></li>
-                            </ul>
-                        </li>
-                        <li class="navigation__item"
-                            style="display: flex;align-items: center;gap:5px;background-color: aqua;">
-                            <a href="" style=" color:black;text-decoration: none;">Skills</a>
-                            <i class="fa-duotone fa-solid fa-plus"></i>
-                            <ul
-                                style="position: absolute;top:200%;left:30%;list-style-type: none;background-color: red;padding-left: 5px;padding-right: 5px;padding-top: 12px;padding-bottom: 12px;">
-                                <li>dfsijghldkfnfdngbmn </li>
-                                <li>dfklgnlk</li>
-                                <li>idsfjglhkjdfgskljn</li>
-                            </ul>
-                        </li>
-                        <li class=" navigation__item"
-                            style="display: flex;align-items: center;gap:5px;background-color: black;">
-                            <a href="" style="color:black;text-decoration: none;">Courses</a>
-                            <i class="fa-duotone fa-solid fa-plus"></i>
-                            <ul
-                                style="position: absolute;top:200%;list-style-type: none;background-color: purple;padding-left: 5px;padding-right: 5px;padding-top: 12px;padding-bottom: 12px;">
-                                <li><a href="" style="text-decoration: none;color:inherit">iosafgjn</a></li>
-                                <li><a href="" style="text-decoration: none;color:inherit">iosafgjn</a></li>
-                                <li><a href="" style="text-decoration: none;color:inherit">iosafgjn</a></li>
-                            </ul>
-
-
-                        <li class=" navigation__item"
-                            style="display: flex;align-items: center;gap:5px;background-color: blue;">
-                            <a href="" style="color:black;text-decoration: none;">Carrer</a>
-                            <i class="fa-duotone fa-solid fa-plus"></i>
-                            <ul
-                                style="position: absolute;top:100%;left:30%;list-style-type: none;background-color: blue;padding-left: 5px;padding-right: 5px;padding-top: 12px;padding-bottom: 12px;">
-                                <li>dfsijghldkfnfdngbmndfskjgln </li>
-                                <li>dfklgnlk</li>
-                                <li>idsfjglhkjdfgskljn</li>
-                            </ul>
-                        </li>
-                        <li class=" navigation__item">
-                            <a href="" style="color:black;text-decoration: none;">Our Blog</a>
-                        </li>
-                        <li class=" navigation__item" style="display: flex;align-items: center;">
-                            <a href="" style="color:black;text-decoration: none;">Contact Us</a>
-
-                        </li>
-                    </ul>
-
-                    <div style="display: flex;">
-
-                        <button
-                            style="background-color: red;border: none;cursor: pointer;display: block;padding-top: 15px;padding-bottom: 15px;border-radius: 12px;padding-left: 15px;padding-right: 12px;">Register</button>
-                    </div>
-
-
-
-                </div>
-
-
-            </header>
-
+  <body>
+    <div
+      style="
+        max-width: 1200px;
+        margin-left: auto;
+        display: flex;
+        margin-right: auto;
+        background-color: aqua;
+      "
+    >
+      <header style="">
+        <div style="background-color: blue" class="logo-container">
+          <img
+            src="https://bibskills.com/storage/accessskills/files/1/bib_skills_logo.png"
+            alt="Bib-logo"
+            srcset=""
+          />
         </div>
+
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            background-color: aqua;
+            flex-grow: 1;
+          "
+        >
+          <ul
+            class="navigation__list"
+            style="
+              display: flex;
+              list-style-type: none;
+              justify-content: space-between;
+              width: 100%;
+            "
+          >
+            <li class="navigation__home__item">
+              <a href="#">Home</a>
+            </li>
+            <li class="navigation__about__item">
+              <a href="#">About</a>
+              <i class="fa-duotone fa-solid fa-plus"></i>
+              <ul class="navigation__about__item__menu">
+                <li><a href="#">Gajuri Gaupalika</a></li>
+                <li><a href="#">Gajuri Ooda</a></li>
+                <li><a href="#">Message By Vice Principle</a></li>
+                <li><a href="">Message by Principle</a></li>
+              </ul>
+            </li>
+            <li class="navigation__level__item">
+              <a href="#">Level</a>
+              <i class="fa-duotone fa-solid fa-plus"></i>
+              <ul class="navigation__level__item__menu">
+                <li><a href="#">Primary</a></li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Secondary</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__facilities__item">
+              <a href="">Facilities</a>
+              <i class="fa-duotone fa-solid fa-plus"></i>
+              <ul class="navigation__facilities__item__menu">
+                <li><a href="">Labs</a></li>
+
+                <li><a href="">Game and Sports</a></li>
+                <li><a href="">iosafgjndfsgfd</a></li>
+              </ul>
+            </li>
+            <li class="navigation__item" style="background-color: red">
+              <a
+                href=""
+                style="
+                  color: black;
+                  text-decoration: none;
+                  padding: 10px;
+                  display: block;
+                "
+                >Our Teams</a
+              >
+            </li>
+            <li class="navigation__item" style="background-color: red">
+              <a
+                href=""
+                style="
+                  color: black;
+                  text-decoration: none;
+                  padding: 10px;
+                  display: block;
+                "
+                >Gallery</a
+              >
+            </li>
+            <li
+              class="navigation__item"
+              style="
+                display: flex;
+                align-items: center;
+                background-color: purple;
+              "
+            >
+              <a
+                href=""
+                style="color: black; text-decoration: none; padding: 10px"
+                >Our Blogs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>
